@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="indexd.css  " />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <a href="index.html" class="sidebar-icon">🌦️</a>
+        <a href="kota.html" class="sidebar-icon">🏙️</a>
+        <a href="peta.html" class="sidebar-icon">🗺️</a>
+      </div>
+      <div class="main">
+        <form action="kota.html" method="get" class="search-bar">
+          <input type="text" name="city" placeholder="Search city..." id="searchInput" />
+        </form>
+        <div class="weather-details">
+          <div>
+            <h3 id="city-name">Jakarta</h3>
+            <p class="description">Partly Cloudy</p>
+            <h4 id="temperature">31<span>°C</span></h4>
+          </div>
+          <img src="icons1/clear.svg" class="weather-icon" />
+        </div>
+        <div class="hourly">
+          <h3>Today's Forecast</h3>
+          <ul class="details-content"></ul>
+        </div>
+        <div class="air-conditions">
+          <div>
+            <span>Real Feel</span>
+            <span>30°</span>
+          </div>
+          <div>
+            <span>Wind</span>
+            <span>0.2 km/h</span>
+          </div>
+          <div>
+            <span>Chance of Rain</span>
+            <span>0%</span>
+          </div>
+          <div>
+            <span>UV Index</span>
+            <span>3</span>
+          </div>
+        </div>
+
+        <div class="forecast">
+          <h3>7-Day Forecast</h3>
+          <div class="forecast-list">
+            <div class="forecast-day">
+              <span class="day">Today</span>
+              <img src="icons1/clear.svg" class="forecast-icon" />
+              <span class="temp">36° / 22°</span>
+            </div>
+            <div class="forecast-day">
+              <span class="day">Tue</span>
+              <img src="icons1/clear.svg" class="forecast-icon" />
+              <span class="temp">37° / 21°</span>
+            </div>
+            <div class="forecast-day">
+              <span class="day">Wed</span>
+              <img src="icons1/clear.svg" class="forecast-icon" />
+              <span class="temp">37° / 21°</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script></script>
+  </body>
+</html>
