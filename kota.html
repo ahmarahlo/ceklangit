@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="scriptKota.js"></script>
+    <link rel="stylesheet" type="text/css" href="kota.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <a href="index.html">🌦️</a>
+        <a href="kota.html">🏙️</a>
+        <a href="peta.html">🗺️</a>
+      </div>
+      <div class="main">
+        <div class="search-bar">
+          <input type="text" placeholder="Search city..." id="searchInput" />
+        </div>
+
+        <div class="history-list-container">
+          <h3>Riwayat Pencarian</h3>
+          <div class="history-list"></div>
+        </div>
+
+        <div class="hourly">
+          <h3>Today's Forecast</h3>
+          <ul class="details-content" style="display: flex;flex-direction: row;padding: 40px 0px;"></ul>
+        </div>
+        <div class="forecast">
+          <h3>3-Day Forecast</h3>
+          <div class="forecast-list"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
